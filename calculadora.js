@@ -29,7 +29,7 @@ function multiplicar(a,b){
 
 function dividir(a,b){
     resultado = a/b
-    console.log(`El resultado de la divición es ${resultado}`)
+    console.log(`El resultado de la división es ${resultado}`)
     return resultado;
 }
 
@@ -46,12 +46,12 @@ console.log(`
     • calculadorPorcentaje (a,b);
     • generadorDePorcentaje(a,b);
 
-    Tambien puedes usar la calucladora completa con:
+    Tambien puedes usar la calculadora completa con:
 
     • appCalculadora();
     `)
 
-/* Funciones extra Cuadrado de un numero, Promedio de 3 numeros, Calcular% y divGenerar%*/
+/* Funciones extra Cuadrado de un número, Promedio de 3 números, Calcular% y divGenerar%*/
 function cuadradoDeUnNumero(a){    
     multiplicar(a,a);
     console.log(`El cuadrado de ${a} es ${resultado}`)
@@ -97,7 +97,7 @@ function solicitarDosDatos(){
 
 function continuar(){
     
-    let deseaContinuar = parseInt (prompt(`¿Deseas Continuar? (ingresa el numero de la opcion)
+    let deseaContinuar = parseInt (prompt(`¿Deseas Continuar? (ingresa el número de la opción)
         1: Si
         2: No`
     ));
@@ -118,13 +118,13 @@ function continuar(){
 
 function calculadoraPrompt(){
     let operacion = parseInt(prompt(`
-        Que operación deseas realizar (ingresa el numero de la opcion)
+        Que operación deseas realizar (ingresa el número de la opción)
         1. Sumar
-        2. Reatar
+        2. Resatar
         3. Multiplicar
         4. Dividir
-        5. Cuadrado de un numero  
-        6. Promedio de 3 numeros
+        5. Cuadrado de un número  
+        6. Promedio de 3 números
         7. Calculadro de porcentaje
         8. Generador de porcentaje
     `))
@@ -148,7 +148,7 @@ function calculadoraPrompt(){
         case 4:
             solicitarDosDatos();
             dividir(datoA,datoB);
-            alert(`El resultado de la divición es ${resultado}`)
+            alert(`El resultado de la división es ${resultado}`)
             break;
         case 5:
             let datounico =  parseInt(prompt('Ingresa el primer valor'))
