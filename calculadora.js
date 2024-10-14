@@ -1,13 +1,13 @@
 console.log("Bienvenido a la calucadora");
 
-/* Aqui se declaran las variables globales que tililzaremos */
+/* Aqui se declaran las variables globales que utililzaremos */
 
 let resultado;
 let validador = true;
 let datoA;
 let datoB;
 
-/* Funciones basicad sumar, restar, multipmicar y dividir*/
+/* Funciones basicas sumar, restar, multipmicar y dividir*/
  
 function suma(a,b){
     resultado = a+b;
