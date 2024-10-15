@@ -9,7 +9,7 @@ let datoB;
 
 /* Funciones basicas sumar, restar, multipmicar y dividir*/
  
-function suma(a,b){
+function sumar(a,b){
     resultado = a+b;
     console.log(`El resultado de la suma es ${resultado}`)
     return resultado
@@ -37,8 +37,8 @@ console.log("-------------- Testeo de Operaciones / Calculadora --------------")
 console.log(`
     Testea algúna de las operaciones:
 
-    • suma(a,b);
-    • resta(a,b);
+    • sumar(a,b);
+    • restar(a,b);
     • multiplicar(a,b);
     • dividir(a,b);
     • cuadradoDeUnNumero(a);
@@ -59,8 +59,8 @@ function cuadradoDeUnNumero(a){
 
 function promedioDeTresNumeros(a,b,c){
    
-    let suma1 = suma(a,b)
-    let sumatotal = suma(suma1,c)
+    let suma1 = sumar(a,b)
+    let sumatotal = sumar(suma1,c)
 
     dividir(sumatotal,3);
 
@@ -132,7 +132,7 @@ function calculadoraPrompt(){
     switch(operacion){
         case 1:
             solicitarDosDatos();
-            suma(datoA,datoB);
+            sumar(datoA,datoB);
             alert(`El resultado de la suma es ${resultado}`)
             break;
         case 2:
@@ -187,6 +187,8 @@ function appCalculadora(){
         calculadoraPrompt();
         continuar();
     }
+
+    alert('Hasta luego')
 
 }
 
