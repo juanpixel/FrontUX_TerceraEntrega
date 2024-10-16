@@ -33,6 +33,8 @@ function dividir(a,b){
     return resultado;
 }
 
+
+
 console.log("-------------- Testeo de Operaciones / Calculadora --------------")
 console.log(`
     Testea algúna de las operaciones:
@@ -45,6 +47,8 @@ console.log(`
     • promedioDeTresNumeros(a,b,c);
     • calculadorPorcentaje (a,b);
     • generadorDePorcentaje(a,b);
+    • verificarParidad(a);
+    • sumarSecuencia(a,b);
 
     Tambien puedes usar la calculadora completa con:
 
@@ -81,6 +85,32 @@ function generadorDePorcentaje(a,b){
     multiplicar(divide1,100)
 
     console.log(`${a} es el ${resultado}% de ${b}`)
+}
+
+/* Nivel IV - Condicionales y Bucles */
+
+function verificarParidad(a){
+    if (a % 2 === 0){
+        resultado = 'par'
+        
+    }else{
+        resultado = 'impar'
+    }
+    console.log(`El numero que ingresaste es ${resultado}`)
+    return resultado
+}
+
+function sumarSecuencia(a,b){
+
+    resultado = 0
+
+    for (let i = a; i <= b; i++){
+         resultado = resultado + i
+         console.log(resultado)
+    }
+    console.log(`La sumatoria desde ${a} hasta ${b} es igual a ${resultado}`)
+
+    return resultado
 }
 
 /*App para ser usada con prompt*/
@@ -127,6 +157,8 @@ function calculadoraPrompt(){
         6. Promedio de 3 números
         7. Calculadro de porcentaje
         8. Generador de porcentaje
+        9. Validar si es par o impar
+        10. sumatoria entre 2 números
     `))
 
     switch(operacion){
@@ -170,6 +202,16 @@ function calculadoraPrompt(){
             solicitarDosDatos();
             generadorDePorcentaje(datoA,datoB);
             alert(`${datoA} es el ${resultado}% de ${datoB}`)
+            break;
+        case 9:
+            let paroimpar =  parseInt(prompt('Ingresa el primer valor'))
+            verificarParidad(paroimpar);
+            alert(`El numero que ingresaste es ${resultado}`)
+            break;
+        case 10:
+            solicitarDosDatos();
+            sumarSecuencia(datoA,datoB);
+            alert(`La sumatoria desde ${datoA} hasta ${datoB} es igual a ${resultado}`)
             break;
         default:
             alert(`Valor Incorrecto intenta otra vez`);
